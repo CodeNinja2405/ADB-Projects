@@ -1,0 +1,92 @@
+<html>
+<head>
+
+    <body>
+        <style>
+            fieldset {
+                background-color: #eeeeee;
+            }
+    
+            legend {
+                background-color: gray;
+                color: white;
+                padding: 5px 10px;
+            }
+    
+            input {
+                margin: 5px;
+            }
+        </style>
+        <div class="container">
+            <div id="barchart_values" style="width: 900px; height: 300px;"></div>
+        </div>
+        <div class="container">
+            <div id="piechart" style="width: 900px; height: 300px;"></div>
+        </div>
+         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            var info = 
+                {{
+                    data | tojson
+                }};
+         
+            console.log('info', info);
+            google.charts.load('current', {
+                'packages': ['corechart']
+            });
+            google.charts.setOnLoadCallback(drawChart1);
+            google.charts.setOnLoadCallback(drawChart2);
+            const key = Object.keys(info)
+            function drawChart1() {
+                let obj= [['fruits', 'value']]
+                for(let i=0;i<key.length;i++) {
+                    obj.push([key[i],info[key[i]]])
+                }
+                    console.log("object",obj)
+                var data = google.visualization.arrayToDataTable(obj);
+    
+                var options = {
+                    title: 'Task1',
+                    colors:['green'],
+    
+                };
+    
+                var chart = new google.visualization.ColumnChart(document.getElementById('barchart_values'));
+    
+                chart.draw(data, options);
+    
+    
+            }
+             function drawChart2() {
+                let obj= [['range', 'value']]
+                for(let i=0;i<key.length;i++) {
+                    obj.push([key[i],info[key[i]]])
+                }
+                    console.log("object",obj)
+                var data = google.visualization.arrayToDataTable(obj);
+    
+                var options = {
+                    title: 'Range',
+                };
+    
+                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    
+                chart.draw(data, options);
+    
+    
+            }
+           
+        </script>
+       
+    </body>
+    
+    </html>
+
+
+
+</head>
+
+
+
+
+</html>

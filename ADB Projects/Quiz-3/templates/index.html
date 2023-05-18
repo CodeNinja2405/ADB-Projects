@@ -1,0 +1,114 @@
+<html>
+
+  <head>
+    <h1 align = 'center'>Mohammed Ishaakh Ahamed</h1>
+    <h2 align = 'center'>1001986153</h2><br><br>
+            
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      .row {
+        margin-left:-5px;
+        margin-right:-5px;
+      }
+        
+      .column {
+        float: left;
+        width: 50%;
+        padding: 5px;
+      }
+      
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid rgb(199, 121, 121);
+      }
+      
+      th, td {
+        text-align: left;
+        padding: 16px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #7a6eaf;
+      }
+      
+      body {
+            background-color: rgb(184, 250, 214);
+          }
+      </style>
+    <title>Index</title>
+</head>
+
+<center>
+<body>
+<div>
+
+
+  <div>
+    <h3> task 1 </h3>
+   <!-- <div> -->
+     <form action="/queryone" method="get">
+       <!-- Enter Start Year: <input type="number" name="year1"/>
+       Enter End Year: <input type="number" name="year2"/>
+       number of times: <input type="number" name="num"/> -->
+
+       Start Year: <input type="number" name="y1"/>
+       End Year: <input type="number" name="y2"/>
+       Start votes: <input type="number" name="v1"/>
+       End Votes: <input type="number" name="v2"/>
+       <!-- Enter Start votes: <input type="number" name="sv"/>
+       Enter End Votes: <input type="number" name="ev"/> -->
+
+     <input type="submit" value="Submit"><br/><br/>
+     </form>
+   <!-- </div> -->
+   <br/>
+  </div>
+
+  <div>
+    <h3> task 1 with for </h3>
+   <!-- <div> -->
+     <form action="/withfor" method="get">
+      Start Year: <input type="number" name="y1"/>
+      End Year: <input type="number" name="y2"/>
+      Start votes: <input type="number" name="v1"/>
+      End Votes: <input type="number" name="v2"/>
+       Enter the number of Random queries you want to execute to see time diff using Redis : <input type="text" name="fnum">
+
+     <input type="submit" value="Submit"><br/><br/>
+     </form>
+   <!-- </div> -->
+   <br/>
+  </div>
+
+  <div>
+    <h3> task 1 with redis </h3>
+   <!-- <div> -->
+     <form action="/withredis" method="get">
+      Start Year: <input type="number" name="y1"/>
+      End Year: <input type="number" name="y2"/>
+      Start votes: <input type="number" name="v1"/>
+      End Votes: <input type="number" name="v2"/>
+       Enter the number of Random queries you want to execute to see time diff using Redis  : <input type="text" name="loopiteration">
+     <input type="submit" value="Submit"><br/><br/>
+     </form>
+   <!-- </div> -->
+   <br/>
+  </div>
+
+
+</body>
+</center>
+ </html>
+ 

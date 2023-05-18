@@ -1,0 +1,81 @@
+
+Name:
+Last 4 digits ID:
+
+CSE 6331, Cloud Computing					
+
+
+Quiz Q6, Summer 2022   (c) DL, UTA, 2022
+
+
+  C&P means cut and paste only those relevant lines from your program(s) into this quiz.
+
+
+ 1.  I understand that I am on my honor during this quiz, I will not collaborate, use 
+     non-allowed sources, and I will not discuss or share this quiz with anyone for the next 
+     12 hours.
+     You MAY: use Google to search, use previous source code, 
+     YOU MAY NOT use:
+     Email, Facebook, Hangouts, IM, chats, Skype or ANY other human connection.
+
+     This is a timed test. Late tests will have points deducted for being late.
+     Very late tests will not be graded.
+
+     When you are complete, with any part, raise your hand, so we may visually inspect that part.
+
+     The second part of the test, you should electronically submit, you will need to copy and paste 
+     only those lines of code to implement that part of the test, usually a few (two to eight) lines of code. 
+     Place it immediately after the question.
+
+     Submit this Quiz (renamed) with code cut and pasted, ONLY text. DO NOT submit zips, binaries, libraries,
+     or anything other than text.
+
+     When any parts(questions) are complete complete, submit this test, you may make multiple submissions.
+
+     If you have computer, or other, problems, please raise your hand immediately.
+
+     If you understand and agree, please initial here:
+     _________________
+
+ 2. Get files from this same folder.
+   
+ 3. Name your program/submission with your name and last digits of your ID.
+
+ 4a. Using the cloud services provider, all functionality possible should be implemented on that provider.
+     (Of course, displaying web pages through a browser and the user interface is "local")
+
+ 4b. Upload all data files (*csv, not this quiz) to cloud service. 
+  
+Show and submit code, when each part is complete, raise your hand and then show us:
+
+ To recieve credit you MUST show (demo) AND submit the code (text only) on Canvas.
+
+    You are asked to build a very minimal course registration system. It will (of course) be cloud based.
+    Students will be allowed to enroll for up to as many classes as they wish, as long as there is room (seats) in each requested class,
+    and as long as they take a maximum of two in one day. The Days are M,W,F for Monday, Weds and Friday (or only one letter or two
+    letters/days in some cases) and TR for Tuesday and Thursday, or T for Tuesday.
+    Only students who are enrolled (on the list of students) are able to enroll in a class. (You may use name or ID to check)
+    Classes are specified by a class number and section number, some classes have more than one section. 
+    For security reasons, the student view and the administrator view must run on different instances 
+    and must be viewable in different browsers.
+    Classes that are 5000 or 6000 level classes may only be taken by older students, we will give you a minimum age MA in a web
+    page, don't allow students below that age to enroll in 5000 or 6000 level classes.
+
+    Your interface will be of two different views: the first is the student view where she may enter her name or ID and then 
+    enroll in a new course (if available). The second is the administrators view, who may see the names and ids and ages for
+    all students for a specific class (given the course and section number).
+
+ 10. Show a web page and interface (which resides on the cloud provider) with your 
+     Student ID at the top and below that, your name, at the top of every web page dispayed 
+     (for this quiz). Please use a large font.
+
+ 11. Show us the student view. Show us instances running.
+
+ 12. Show us the administrators view. Show us instances running.
+
+ 13. Show us, in a link, the application running and we will try it out. Only for parts (10), 11, 12
+
+ 15. When complete, return (send) this quiz
+     If you finish early, send this immediately, otherwise send between
+     the end of class and no more than 1 minute after that.
+

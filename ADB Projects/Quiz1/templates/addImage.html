@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<style>
+		   #tdata {
+			font-family: Arial, Helvetica, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		  }
+		  
+		  #tdata td, #tdata th {
+			border: 1px solid #ddd;
+			padding: 1px;
+		  }
+		  
+		  #tdata tr:nth-child(even){background-color: #d5b6ad;}
+		  #tdata tr:nth-child(odd){background-color: rgb(174, 202, 225);}
+		  #tdata tr:hover {background-color: rgb(101, 243, 148);}
+		  
+		  #tdata th {
+			padding-top: 4px;
+			padding-bottom: 4px;
+			text-align: left;
+			background-color: #04AA6D;
+			color: white;
+		  } 
+		  
+		  
+		  </style>
+	   </head>
+</head>
+<body>
+    <center>
+	
+            <br>
+	<p> Click  <a href="/"><button>Web page</button></a> to go back to main page.</p><br> <br>
+		<form method="POST" action="/addpicture" >
+			Enter Number: <input type = "number" name="Telnum"><br><br>
+			<!-- Enter Name to be update: <input type = "text" name = "Name" /><br><br> -->
+			Choose image to be upload: <input type="file" accept="static/*" name = "Image"/><br><br>
+			<input type = "submit" name = "Update"/>
+		 </form>
+    </center> 
+</body>
+</html>

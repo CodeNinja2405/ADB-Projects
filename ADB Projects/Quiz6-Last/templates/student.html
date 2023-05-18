@@ -1,0 +1,79 @@
+<html>
+<head>
+
+    <h2 align="center"><p>Student ID: 1001986153  </p></h2><br/>
+    <h2 align="center"><p>Ishaakh Ahamed Mohammed</p></h2><br/>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+  
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid rgb(199, 121, 121);
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #7a6eaf;
+}
+
+body {
+      background-color: rgb(73, 252, 198);
+    }
+</style>
+
+
+{% block content %}
+
+<h4 align="center">List of the Classes Available:-<br> </h4>
+
+</head>
+
+<body>
+
+<br> 
+<table align="center">
+    <tr>
+      <th>Course </th>
+      <th>Section</th>
+      <th>Days</th>
+      <th>Max</th>
+
+    </tr>
+    {% for row in frows %}
+    <tr>
+        {% for column in range(row|length) %}
+            <td>{{ row[column] }}</td>
+        {% endfor %}
+    </tr>
+{% endfor %}
+{% endblock %}
+
+</body>
+</html>

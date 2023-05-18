@@ -1,0 +1,84 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <h1 align = 'center'>Mohammed Ishaakh Ahamed</h1>
+        <h2 align = 'center'>1001986153</h2><br><br>
+      
+      
+        
+      <style>
+          body {
+            background-color: rgb(164, 212, 157);
+          }
+        fieldset {
+            background-color: #eeeeee;
+        }
+
+        legend {
+            background-color: gray;
+            color: white;
+            padding: 5px 10px;
+        }
+
+        input {
+            margin: 5px;
+        }
+    </style>
+         
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<center>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="/" class="btn btn-primary">Home</a><br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="chart_div" style="width: 1000px; height: 750px;"></div>
+    </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        var col1 = {{ col1 | tojson }};
+        var col2 = {{ col2 | tojson }};
+        console.log('info', col1, col2);
+        
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        let array = [['Column1', 'Column3']];
+        for (let i = 0; i < col1.length; i++) {
+            array.push([col1[i], col2[i]]);
+        }
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable(array);
+
+            var options = {
+                title: 'Scatterplot Column1 and Column3',
+                hAxis: { title: 'Column1', minValue: 0, maxValue: 225 },
+                vAxis: { title: 'Column3', minValue: 0, maxValue: 200 },
+                legend: 'none'
+            };
+
+            var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+
+            chart.draw(data, options);
+        }
+
+
+    </script>
+</body>
+</center>
+</html>

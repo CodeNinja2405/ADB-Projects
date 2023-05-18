@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+   <head>
+      <h1 align = 'center'>Mohammed Ishaakh Ahamed</h1>
+      <h2 align = 'center'>1001986153</h2><br><br>
+              
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row {
+          margin-left:-5px;
+          margin-right:-5px;
+        }
+          
+        .column {
+          float: left;
+          width: 50%;
+          padding: 5px;
+        }
+        
+        /* Clearfix (clear floats) */
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        table {
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 50%;
+          border: 1px solid rgb(199, 121, 121);
+        }
+        
+        th, td {
+          text-align: center;
+          padding: 10px;
+         }
+      </style> 
+      </head>
+   <body>
+
+   <center>
+
+      <p> Click  <a href="/"><button>Web page</button></a> to go back to main page.</p><br> <br>
+   
+      <table>
+        <h1 style="color: purple"><b>Earthquake Records</b></h1><br><br>
+        
+            <tr>
+                <th scope="col">Time</th>
+                <th scope="col">Latitude</th>
+                <th scope="col">Longitude</th>
+                <th scope="col">Depth</th>
+                <th scope="col">Mag</th>
+                <th scope="col">MagType</th>
+                <th scope="col">Net</th>
+                <th scope="col">ID</th>
+                
+                <th scope="col">Place</th>
+                
+                <th scope="col">HorizontalError</th>
+               
+                <th scope="col">MagError</th>
+                <th scope="col">MagNst</th>
+               
+                <th scope="col">LocationSource</th>
+                
+            </tr>
+       
+        
+            {% for row in rows %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                    <td>{{ row[3] }}</td>
+                    <td>{{ row[4] }}</td>
+                    <td>{{ row[5] }}</td>
+                    <td>{{ row[6] }}</td>
+                    <td>{{ row[7] }}</td>
+                    <td>{{ row[8] }}</td>
+                    <td>{{ row[9] }}</td>
+                    <td>{{ row[10] }}</td>
+                    <td>{{ row[11] }}</td>
+                    <td>{{ row[12] }}</td>
+                   
+                </tr>
+            {% endfor %}
+        
+    </table>
+   </center>      
+   </body>
+</html>

@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+   <head>
+      <h1 align = 'center'>Mohammed Ishaakh Ahamed</h1>
+      <h2 align = 'center'>1001986153</h2><br><br>
+              
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row {
+          margin-left:-5px;
+          margin-right:-5px;
+        }
+          
+        .column {
+          float: left;
+          width: 50%;
+          padding: 5px;
+        }
+        
+        /* Clearfix (clear floats) */
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        table {
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 50%;
+          border: 1px solid rgb(199, 121, 121);
+        }
+        
+        th, td {
+          text-align: center;
+          padding: 10px;
+
+
+        }
+        
+        tr:nth-child(even) {
+          background-color: #65607e;
+        }
+        tr:nth-child(odd) {
+          background-color: #79af7c;
+        }
+        body {
+              background-color: rgb(168, 233, 213);
+            }
+        </style>
+      <title>Taskone</title>
+     
+  </head>
+  <center>
+   <body>
+   
+      <div>
+         <div >
+   <center>
+      <header> 
+         <br>
+         <a href="/">Home Page</a>
+         <p style='color:rgb(20, 20, 20)'><b>Time to Execute the query: <b>{{setdetails}}</b></p>
+         
+          </header>
+   </center>
+   </div>
+   <br> <br>
+   </header>
+            
+      <br> <br>
+      
+         <H2>Top 25 results</H2>
+         <tr>
+            <!-- year	state	votes	party -->
+
+
+            <th><b>Year</b></th>
+            <th><b>State</b></th>
+            <th><b>Votes</b></th>
+            <th><b>Party</b></th>
+            
+
+             
+         </tr>
+         {% for col in drows %}
+         <tr>
+            <td>{{col[0]}}</td>
+            <td>{{col[1]}}</td>
+            <td> {{col[2]}}</td>
+            <td>{{col[3]}}</td>
+             
+         </tr>
+         {% endfor %}
+      </table>
+
+      <br> <br>
+      <br> <br>
+
+
+      <br>
+      
+         <H2>Max to Min</H2>
+         <tr>
+            <!-- year	state	votes	party -->
+
+
+            <th><b>Year</b></th>
+            <th><b>State</b></th>
+            <th><b>Votes</b></th>
+            <th><b>Party</b></th>
+            
+
+             
+         </tr>
+         {% for col in erows %}
+         <tr>
+            <td>{{col[0]}}</td>
+            <td>{{col[1]}}</td>
+            <td> {{col[2]}}</td>
+            <td>{{col[3]}}</td>
+             
+         </tr>
+         {% endfor %}
+      </table>
+      <br> <br>
+      <br> <br>
+
+
+
+      
+         <H2>Min to max</H2>
+         <tr>
+            <!-- year	state	votes	party -->
+
+
+            <th><b>Year</b></th>
+            <th><b>State</b></th>
+            <th><b>Votes</b></th>
+            <th><b>Party</b></th>
+            
+
+             
+         </tr>
+         {% for col in frows %}
+         <tr>
+            <td>{{col[0]}}</td>
+            <td>{{col[1]}}</td>
+            <td> {{ col[2]}}</td>
+            <td>{{col[3]}}</td>
+             
+         </tr>
+         {% endfor %}
+      </table>
+
+  
+
+
+
+
+
+   </body>
+</center>
+</html>

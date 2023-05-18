@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+   <head>
+
+	<h1 align = 'center'>Mohammed Ishaakh Ahamed</h1>
+	<h2 align = 'center'>1001986153</h2><br><br>
+       <style>
+          #tdata {
+           font-family: Arial, Helvetica, sans-serif;
+           border-collapse: collapse;
+           width: 100%;
+         }
+         
+         #tdata td, #tdata th {
+           border: 1px solid #ddd;
+           padding: 1px;
+         }
+         
+         #tdata tr:nth-child(even){background-color: #d5b6ad;}
+         #tdata tr:nth-child(odd){background-color: rgb(174, 202, 225);}
+         #tdata tr:hover {background-color: rgb(101, 243, 148);}
+         
+         #tdata th {
+           padding-top: 4px;
+           padding-bottom: 4px;
+           text-align: left;
+           background-color: #04AA6D;
+           color: white;
+         } 
+         
+         
+         </style>
+      </head>
+	<body>
+		
+		<center>
+			
+		
+            <img src="{{url_for('static',filename = 's.jpg')}}" alt="S Image" width="200" height="200">
+		 <br><br>
+		
+		
+			<a href="/table"  >Table</a><br>
+			<a href="/searchName"  >Search Keyword</a><br>
+			<a href="/salaryRange"  >search number</a><br>
+			<a href="/addImage"  >Add Picture</a><br>
+			<!-- <a href="/updateKeyword"  >Update Keywords</a>
+			<a href="/updateSalary"  >Update Salary</a> -->
+			<a href="/deleteRecord"  >Delete record</a><br>
+			<a href="/addNewRecord"  >Add New Records</a><br>
+		</center>
+		
+	
+</html>

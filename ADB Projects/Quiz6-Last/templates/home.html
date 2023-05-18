@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <h1 align = 'center'>Mohammed Ishaakh Ahamed</h1>
+    <h2 align = 'center'>1001986153</h2><br><br>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/styles.css') }}"
+    />
+    <style>
+      .test > div {
+        height: 60px;
+      }
+    </style> -->
+  <!-- </head>
+  <body>
+    <center>
+      <div style="padding-top: 50px" class="test">
+        <div>
+          <a class="btn" href="newclass">New Class</a>
+        </div>
+        <div>
+          <a class="btn" href="asc">Add students to class</a>
+        </div>
+        <div>
+          <a class="btn" href="fsc">Registered students in class</a>
+        </div>
+        <div>
+          <a class="btn" href="esd">Edit student details</a>
+        </div>
+      </div>
+    </center>
+  </body>
+</html> -->
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+body {
+  background-color: rgb(157, 192, 212);
+}
+</style>
+
+<body>
+<div class="form-check">
+<form action="/index" method="POST">
+     Name: <input type="text" placeholder="Name" name="Name" value="{{ Name }}"> <br/><br/>
+<label class="form-check-input" for="type">Choose a type:</label> <br>
+<!-- <select name="select" id="type"> -->
+    <input class="form-check-input" type = 'checkbox' name="select" value="Student">Student <br/>
+    <input class="form-check-input" type = 'checkbox'  name="select" value="Admin">Admin <br/>
+<!-- </select> -->
+<br><br>
+<input class="btn btn-secondary btn-lg active" type="submit" value="Submit">
+</form>
+  </div>
+  {% block content %}{% endblock %}
+</body>
+</html>
